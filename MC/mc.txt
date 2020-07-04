@@ -3,3 +3,4 @@ new file in mc
 just to test
 hi this is after selecting scm poll
 after adding condition to mc
+after addding poll scm in pipeline
