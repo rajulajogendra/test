@@ -5,6 +5,7 @@ pipeline {
             steps {
             git 'https://github.com/rajulajogendra/test.git'
         }
+        }
         stage('Build') {
         when { changeset "demo/*" }
             steps {
@@ -13,4 +14,3 @@ pipeline {
         }
     }
   }
-}
