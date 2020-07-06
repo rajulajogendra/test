@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+            git 'https://github.com/rajulajogendra/test.git'
+        }
+        stage('Build') {
+        when { changeset "demo/*" }
+            steps {
+                sh "echo demo_Build "
+            }
+        }
+    }
+  }
+}
