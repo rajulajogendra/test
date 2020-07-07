@@ -9,7 +9,7 @@ pipeline {
         stage ('Build') {
         when { changeset "sandeep/*" }
             steps {
-                sh "echo sandeep_Build "
+                sh "echo sandeep_Build"
             }
         }
     }
